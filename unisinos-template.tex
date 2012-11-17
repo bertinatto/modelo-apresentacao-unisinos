@@ -1,0 +1,85 @@
+\documentclass{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc} 
+\usepackage{graphicx} 
+\usepackage{bibentry} 
+%\usetheme{Warsaw}
+
+% Dados
+\title{Título do Trabalho}
+\author{Fulano de Tal}
+\institute{Universidade do Vale do Rio dos Sinos - UNISINOS}
+\date{21 de dezembro de 2012}
+
+% Remove os símbolos de navegação
+\usenavigationsymbolstemplate{}
+
+% Rodapé
+\setbeamertemplate{footline}{%
+  \begin{beamercolorbox}[wd=\paperwidth]{footlinecolor}
+    \includegraphics[width=\paperwidth]{footline.png}
+  \end{beamercolorbox}%
+}
+
+\newcommand*\oldmacro{}%
+\let\oldmacro\insertshorttitle%
+\renewcommand*\insertshorttitle{%
+  \oldmacro\hfill%
+  \insertframenumber\,/\,\inserttotalframenumber}
+
+
+% Alinhamento do título a esquerda
+\setbeamertemplate{frametitle}[default][right]
+
+\begin{document}
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+\section{Sumário}
+\begin{frame}{Sumário}
+    \tableofcontents[]
+\end{frame}
+
+\section{Introdução}
+\begin{frame}{Introdução} 
+\begin{itemize}
+\pause \item Tópico 1
+\pause \item Mais um
+\pause \item Outro
+\end{itemize}
+\end{frame}
+
+\section{Proposta}
+\subsection{Implementação}
+\begin{frame}{Proposta} {Implementação}
+\begin{itemize}
+\pause \item Tópico 1
+\pause \item Mais um
+\pause \item Outro
+\end{itemize}
+\end{frame}
+
+\section{Experimentos}
+\begin{frame}{Experimentos}
+\begin{itemize}
+\pause \item Resultados
+\end{itemize}
+\end{frame}
+
+\section{Conclusão}
+\begin{frame}{Conclusão}
+\begin{itemize}
+\pause \item Conslusão
+\end{itemize}
+\end{frame}
+
+\section{Bibliografia}
+\begin{frame}{Bibliografia}
+\begin{itemize}
+\pause \item Bibliografia
+\end{itemize}
+\end{frame}
+
+\end{document}
